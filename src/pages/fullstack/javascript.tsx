@@ -29,8 +29,8 @@ export default function CV() {
             </h2>
           </div>
           <div>
-            <a className="block" href="mailto:Jonathan@jonathancode.tech">
-              Email:&nbsp;&nbsp;Jonathan@jonathancode.tech
+            <a className="block" href="mailto:jonathankxm@gmail.com">
+              Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
             {/* <a className="block" href="tel:+8617602553940">
               (+86)17602553940
