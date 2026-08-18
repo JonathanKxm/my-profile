@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center cursor-pointer">
           <img alt="logo" src="/code.svg" className="w-6 mr-4" />
           <Link to="bio" smooth={true} offset={-200} duration={500}>
-            Jonathan.K
+            Jonathan
           </Link>
         </div>
 

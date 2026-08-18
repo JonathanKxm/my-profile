@@ -11,7 +11,7 @@ export default function Intro() {
         className="text-gray-200 text-5xl lg:text-7xl italic tracking-tighter mb-4"
       >
         Hi, I'm <br />
-        <span className="text-jonathan-light">Jonathan Kong</span>
+        <span className="text-jonathan-light">Jonathan</span>
         <span className="fi fi-cn text-2xl md:text-4xl ml-5 rounded"></span>
       </motion.p>
 

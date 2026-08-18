@@ -2,14 +2,13 @@ import { motion } from "framer-motion"
 import { RiJavaLine } from "react-icons/ri"
 
 import {
-  SiCss3,
   SiHtml5,
   SiJavascript,
   SiNodedotjs,
   SiReact,
   SiVuedotjs,
 } from "react-icons/si"
-
+import { DiCss3 } from "react-icons/di"
 function TechStack() {
   return (
     <motion.div
@@ -24,7 +23,7 @@ function TechStack() {
       </p> */}
       <div className="flex justify-center items-center text-4xl lg:text-6xl gap-4 pt-2 lg:pt-0 mt-4 md:mt-0">
         <SiHtml5 className="text-orange-500" />
-        <SiCss3 className="text-blue-500" />
+        <DiCss3 className="text-blue-500" />
         <SiJavascript className="text-yellow-400" />
         <SiReact className="text-cyan-500" />
         <SiVuedotjs className="text-green-500" />

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 import { RiJavaLine } from "react-icons/ri"
 import {
-  SiCss3,
   SiDocker,
   SiExpress,
   SiGit,
@@ -11,8 +10,6 @@ import {
   SiMongodb,
   SiMysql,
   SiNodedotjs,
-  SiOracle,
-  SiPowerbi,
   SiReact,
   SiRedis,
   SiSass,
@@ -20,6 +17,9 @@ import {
   SiTailwindcss,
   SiVuedotjs,
 } from "react-icons/si"
+import { DiCss3 } from "react-icons/di"
+import { GrOracle } from "react-icons/gr";
+
 import Category from "./Category"
 
 const skills = [
@@ -34,7 +34,7 @@ const skills = [
       },
       {
         name: "CSS",
-        icon: <SiCss3 className="text-blue-500" />,
+        icon: <DiCss3 className="text-blue-500" />,
         stars: 5,
         halfStars: 0,
       },
@@ -122,7 +122,7 @@ const skills = [
       },
       {
         name: "Oracle",
-        icon: <SiOracle className="text-red-400" />,
+        icon: <GrOracle className="text-red-400" />,
         stars: 4,
         halfStars: 0,
       },
@@ -165,13 +165,7 @@ const skills = [
         icon: <SiJenkins className="text-cyan-500" />,
         stars: 3,
         halfStars: 0,
-      },
-      {
-        name: "PowerBi",
-        icon: <SiPowerbi className="text-yellow-500" />,
-        stars: 2,
-        halfStars: 0,
-      },
+      }
     ],
   },
 ]
