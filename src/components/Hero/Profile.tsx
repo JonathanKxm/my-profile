@@ -77,7 +77,7 @@ function Profile() {
       <div id="word-cloud" className="absolute inset-0 flex items-end" />
 
       <motion.img
-        src="https://profile.mincode.fun/JonathanOutline.png"
+        src="https://profile.jonathancode.tech/JonathanOutline.png"
         alt="Profile"
         className="w-[300px] lg:w-[400px]"
         initial={{

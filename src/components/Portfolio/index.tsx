@@ -9,7 +9,7 @@ const projects: Project[] = [
     title: "LiftHub",
     summary:
       "Create a platform connecting businesses, elevator technicians, and service providers for streamlined elevator maintenance.",
-    image: "https://profile.mincode.fun/lifthub0.jpg",
+    image: "https://profile.jonathancode.tech/lifthub0.jpg",
     url: "https://lifthub.cn",
     techStack: ["react", "nextjs", "tailwindcss", "ant design"],
   },
@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Campus Lab Smart Cabinet Management System",
     summary:
       "Develop a smart cabinet management system for campus laboratories to efficiently and securely store and manage materials, including hazardous substances.",
-    image: "https://profile.mincode.fun/cabinet.jpg",
+    image: "https://profile.jonathancode.tech/cabinet.jpg",
     url: "https://140.143.202.23:9001/chem",
     techStack: ["vue3", "vuex", "ElementUI", "java", "spring"],
   },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "Campus E-commerce",
     summary:
       "Unified management of supplier SKU, integrating product purchasing and expense reimbursement processes, enabling university professors to select teaching-related products from designated supplier SKUs without needing to apply for reimbursement for each purchase.",
-    image: "https://profile.mincode.fun/E-commerce.jpg",
+    image: "https://profile.jonathancode.tech/E-commerce.jpg",
     url: "https://ucaigou.net/",
     techStack: ["vue", "vuex", "ElementUI", "java", "spring"],
   },
