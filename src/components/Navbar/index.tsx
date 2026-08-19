@@ -58,7 +58,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="hover:text-jonathan-light">
-            <a href="https://jonathantube.github.io" target="_blank">
+            <a href="https://jonathankxm.github.io" target="_blank">
               Blog
             </a>
           </li>
@@ -118,7 +118,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="https://jonathantube.github.io" target="_blank">
+              <a href="https://jonathankxm.github.io" target="_blank">
                 Blog
               </a>
             </li>
