@@ -1,22 +1,19 @@
 import Contact from "./components/Contact"
 import Experience from "./components/Experience"
-import Footer from "./components/Footer"
 import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
+import Layout from "./components/Layout"
 import Portfolio from "./components/Portfolio"
 import Skills from "./components/Skills"
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Hero />
       <Skills />
       <Portfolio />
       <Experience />
       <Contact />
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

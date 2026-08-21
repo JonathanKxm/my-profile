@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
-import { Link } from "react-scroll"
+import { Link as RouterLink } from "react-router-dom"
 import { motion } from "framer-motion"
 
 export default function Navbar() {
@@ -31,41 +31,48 @@ export default function Navbar() {
     },
   }
 
+  const handleNavClick = () => {
+    closeNav()
+  }
+
   return (
     <div className="sticky top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
       <div className="max-w-screen-xl mx-auto flex justify-between text-gray-100 text-xl items-center px-6 h-20">
-        <div className="flex items-center cursor-pointer">
+        <RouterLink to="/" onClick={handleNavClick} className="flex items-center focus:outline-none">
           <img alt="logo" src="/code.svg" className="w-6 mr-4" />
-          <Link to="bio" smooth={true} offset={-200} duration={500}>
-            Jonathan
-          </Link>
-        </div>
+          <span>Jonathan</span>
+        </RouterLink>
 
-        <ul className="hidden lg:flex gap-12 z-10 cursor-pointer">
+        <ul className="hidden lg:flex gap-12 z-10">
           <li className="hover:text-jonathan-light">
-            <Link to="bio" smooth={true} offset={-200} duration={500}>
+            <RouterLink to="/#bio" onClick={handleNavClick} className="focus:outline-none">
               Profile
-            </Link>
+            </RouterLink>
           </li>
           <li className="hover:text-jonathan-light">
-            <Link to="skills" smooth={true} offset={0} duration={500}>
+            <RouterLink to="/#skills" onClick={handleNavClick} className="focus:outline-none">
               Skills
-            </Link>
+            </RouterLink>
           </li>
           <li className="hover:text-jonathan-light">
-            <Link to="portfolio" smooth={true} offset={0} duration={500}>
+            <RouterLink to="/#portfolio" onClick={handleNavClick} className="focus:outline-none">
               Portfolio
-            </Link>
+            </RouterLink>
           </li>
           <li className="hover:text-jonathan-light">
-            <a href="https://jonathankxm.github.io" target="_blank">
+            <RouterLink to="/applications" onClick={handleNavClick} className="focus:outline-none">
+              Applications
+            </RouterLink>
+          </li>
+          <li className="hover:text-jonathan-light">
+            <a href="https://jonathankxm.github.io" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
               Blog
             </a>
           </li>
           <li className="hover:text-jonathan-light">
-            <Link to="contact" smooth={true} offset={-80} duration={500}>
+            <RouterLink to="/#contact" onClick={handleNavClick} className="focus:outline-none">
               Contact
-            </Link>
+            </RouterLink>
           </li>
         </ul>
 
@@ -85,53 +92,34 @@ export default function Navbar() {
         >
           <ul className="font-semibold text-2xl space-y-8 mt-24 text-center">
             <li>
-              <Link
-                to="bio"
-                onClick={closeNav}
-                smooth={true}
-                offset={-150}
-                duration={500}
-              >
+              <RouterLink to="/#bio" onClick={handleNavClick} className="focus:outline-none">
                 Profile
-              </Link>
+              </RouterLink>
             </li>
             <li>
-              <Link
-                to="skills"
-                onClick={closeNav}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
+              <RouterLink to="/#skills" onClick={handleNavClick} className="focus:outline-none">
                 Skills
-              </Link>
+              </RouterLink>
             </li>
             <li>
-              <Link
-                to="portfolio"
-                onClick={closeNav}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
+              <RouterLink to="/#portfolio" onClick={handleNavClick} className="focus:outline-none">
                 Portfolio
-              </Link>
+              </RouterLink>
             </li>
             <li>
-              <a href="https://jonathankxm.github.io" target="_blank">
+              <RouterLink to="/applications" onClick={handleNavClick} className="focus:outline-none">
+                Applications
+              </RouterLink>
+            </li>
+            <li>
+              <a href="https://jonathankxm.github.io" target="_blank" rel="noopener noreferrer" className="focus:outline-none">
                 Blog
               </a>
             </li>
             <li>
-              <Link
-                to="contact"
-                onClick={closeNav}
-                smooth={true}
-                offset={200}
-                duration={500}
-              >
+              <RouterLink to="/#contact" onClick={handleNavClick} className="focus:outline-none">
                 Contact
-              </Link>
+              </RouterLink>
             </li>
           </ul>
         </motion.div>

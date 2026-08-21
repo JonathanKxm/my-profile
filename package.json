@@ -1,16 +1,17 @@
 {
-  "name": "my-profile",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "npm run build && vite preview",
-    "deploy": "npm run build && wrangler deploy",
-    "cf-typegen": "wrangler types"
-  },
+	"name": "my-profile",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"dev:cf": "wrangler dev --assets dist/client --port 5173 --local-protocol http",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "npm run build && vite preview",
+		"deploy": "npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
   "dependencies": {
     "@types/file-saver": "^2.0.7",
     "@types/react-scroll": "^1.8.10",
