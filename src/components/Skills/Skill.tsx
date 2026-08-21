@@ -1,5 +1,5 @@
 import { FaRegStar, FaStar, FaStarHalf } from "react-icons/fa"
-import { SkillItem } from "../../types/skill"
+import type { SkillItem } from "../../types/skill"
 
 function Skill({ icon, name, stars, halfStars }: SkillItem) {
   return (

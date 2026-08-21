@@ -2,7 +2,7 @@ import { ShinyEffect } from "../ShinyEffect"
 import { motion } from "framer-motion"
 import { FaLink } from "react-icons/fa"
 import { SiGithub } from "react-icons/si"
-import { Project } from "../../types/project"
+import type { Project } from "../../types/project"
 
 const projects: Project[] = [
   {

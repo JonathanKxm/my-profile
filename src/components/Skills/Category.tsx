@@ -1,5 +1,5 @@
 import Skill from "./Skill"
-import { SkillCategory } from "../../types/skill"
+import type { SkillCategory } from "../../types/skill"
 
 type Props = {
   index: number
