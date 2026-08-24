@@ -29,7 +29,7 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "my-profile-db",
+			"database_name": "job-tracker-db",
 			"database_id": "fc4fcaa8-fcd3-48f4-8354-f9572565f99f"
 		}
 	],
