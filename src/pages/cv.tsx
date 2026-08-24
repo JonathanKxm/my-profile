@@ -52,7 +52,7 @@ export default function CV() {
           </p>
 
           <h3>Experience</h3>
-          <h4>Full Stack Engineer | Freelancer | Jun 2023 - Present</h4>
+          <h4>Full Stack Engineer | Contractor | Jun 2023 - Present</h4>
           <ul>
             <li>
               Focus on developing web applications using <strong>React</strong>
@@ -73,19 +73,8 @@ export default function CV() {
             </li>
           </ul>
 
-          <h4>Project Manager | NkStar Ltd. | 2020/10 - 2023-06</h4>
-          <ul>
-            <li>
-              Developed management systems for enterprises like ERP and OA
-            </li>
-            <li>
-              Oversaw software development teams and client communication,
-              achieving project objectives by fostering collaboration.
-            </li>
-          </ul>
-
           <h4>
-            Senior Software Engineer | Wisedu Education Ltd. | 2012/12 - 2020/09
+            Senior Software Engineer | Wisedu Education Ltd. | 2014/6 - 2023/06
           </h4>
           <ul>
             <li>
@@ -100,7 +89,7 @@ export default function CV() {
           </ul>
 
           <h4>
-            Junior Software Engineer | AsiaInfo Technology Ltd. | 2008/6-2012/11
+            Junior Software Engineer | AsiaInfo Technology Ltd. | 2008/6-2014/6
           </h4>
           <ul>
             <li>
