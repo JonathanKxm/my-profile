@@ -3,6 +3,9 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"scripts": {
 		"dev": "vite",
 		"dev:cf": "wrangler dev --assets dist/client --port 5173 --local-protocol http",
