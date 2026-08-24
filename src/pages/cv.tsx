@@ -25,16 +25,13 @@ export default function CV() {
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan</h1>
             <h2 className="text-base md:text-xl font-semibold">
-              Fullstack Web Developer
+              Full Stack Web Developer
             </h2>
           </div>
           <div>
             <a className="block" href="mailto:jonathankxm@gmail.com">
               Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
-            {/* <a className="block" href="tel:+8617602553940">
-              (+86)17602553940
-            </a> */}
             <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
           </div>
         </header>
@@ -42,34 +39,31 @@ export default function CV() {
         <main>
           <h3>Summary</h3>
           <p>
-            Full Stack Developer with 10+ years' experience in
-            <strong>HTML</strong>,<strong>CSS</strong>,
-            <strong>JavaScript</strong>,<strong>Node.js</strong> and Java,and
-            Skill in <strong>React</strong> and <strong>Vue</strong>. Proactive
-            problem-solver committed to mastering new technologies. Thrives in
-            fast-paced environments, delivering innovative solutions and
-            collaborating within cross-functional teams.
+            Full Stack Developer with 10+ years experience building scalable web applications.
+            Skilled in modern JavaScript ecosystems (<strong>React</strong>, <strong>Vue</strong>, <strong>Node.js</strong>)
+            and enterprise Java (<strong>Spring</strong>). Proven track record of leading cross-functional teams
+            and delivering high-performance e-commerce solutions. Passionate about clean code,
+            API design.
           </p>
 
           <h3>Experience</h3>
           <h4>Full Stack Engineer | Contractor | Jun 2023 - Present</h4>
           <ul>
             <li>
-              Focus on developing web applications using <strong>React</strong>
-              and Node.js ecosystem.
+              Developed multiple full-stack web applications using <strong>React</strong>,
+              <strong>Next.js</strong>, <strong>Vue3</strong>, and <strong>Node.js</strong>
             </li>
             <li>
-              Contributed to an elevator appointment system using React,
-              <strong>Next.js</strong>, Tailwind Css, and Ant Design.
+              Built an elevator appointment system with React, Next.js, Tailwind CSS, and Ant Design
             </li>
             <li>
-              Built a photovoltaic power monitoring system with
-              <strong>Vue</strong>and ElementUI.
+              Developed a smart cabinet management system using Vue3, Ant Design, and Java backend
             </li>
             <li>
-              Contributed to a smart cabinet system with Vue3,
-              <strong>Antd</strong>, and Java, ensuring secure material storage
-              in campus labs and reducing hazardous incidents.
+              Developed <strong>Windows ship performance monitoring client</strong> using <strong>Python</strong> and
+              <strong>PyQt5</strong>, featuring real-time propulsion data visualization,
+              fuel consumption tracking, trim optimization analysis, and CO2 emission
+              reporting with trend analysis dashboards
             </li>
           </ul>
 
@@ -78,13 +72,16 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Led the development of a campus e-commerce system, integrating
-              third-party suppliers and financial systems.
+              Led development of campus e-commerce platform serving 500+ universities,
+              managing $10M+ annual transactions
             </li>
             <li>
-              Implemented automated SKU management and reimbursement processes
-              with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and
-              Alibaba Cloud.
+              Architected automated SKU management and financial reimbursement system
+              using Vue2, Java Spring, MySQL, Elasticsearch
+            </li>
+            <li>
+              Built integration layer with third-party suppliers and payment systems,
+              reducing manual processing by 80%
             </li>
           </ul>
 
@@ -93,21 +90,26 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Contributed to value-added service systems by developing
-              solutions, performing testing, and debugging, enhancing customer
-              satisfaction and telecom functionality
+              Developed telecom value-added service systems using Java and Oracle
+            </li>
+            <li>
+              Performed system testing and debugging, improving service reliability by 30%
             </li>
           </ul>
 
           <h3>Education&Skills</h3>
           <ul>
             <li>
-              Computer Science and Technology, Jiangsu University of Science and
-              Technology
+              Computer Science and Technology, Jiangsu University of Science and Technology
             </li>
             <li className="text-wrap">
-              HTML/CSS/TypeScript/JavaScript/Vue/React/jQuery/Tailwind
-              Css/AntDesign/ElementUI/Node/Java
+              <strong>Frontend:</strong> React/Vue/Next.js/Tailwind/Ant Design/ElementUI
+            </li>
+            <li className="text-wrap">
+              <strong>Backend:</strong> Node.js/Java/Spring/MySQL/Elasticsearch
+            </li>
+            <li className="text-wrap">
+              <strong>Cloud:</strong> Alibaba Cloud/Docker/Git
             </li>
           </ul>
         </main>

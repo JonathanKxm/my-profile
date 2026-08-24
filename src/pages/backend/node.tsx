@@ -25,16 +25,13 @@ export default function CV() {
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan</h1>
             <h2 className="text-base md:text-xl font-semibold">
-              Fullstack Web Developer
+              Node.js Backend Developer
             </h2>
           </div>
           <div>
             <a className="block" href="mailto:jonathankxm@gmail.com">
               Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
-            {/* <a className="block" href="tel:+8617602553940">
-              (+86)17602553940
-            </a> */}
             <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
           </div>
         </header>
@@ -42,34 +39,27 @@ export default function CV() {
         <main>
           <h3>Summary</h3>
           <p>
-            Full Stack Developer with 10+ years' experience in
-            <strong>HTML</strong>,<strong>CSS</strong>,
-            <strong>JavaScript</strong>,<strong>Node.js</strong> and Java,and
-            Skill in <strong>React</strong> and <strong>Vue</strong>. Proactive
-            problem-solver committed to mastering new technologies. Thrives in
-            fast-paced environments, delivering innovative solutions and
-            collaborating within cross-functional teams.
+            Node.js Backend Developer with deep expertise in building <strong>RESTful APIs</strong>,
+            <strong>GraphQL</strong> services, and real-time applications. 10+ years experience
+            with JavaScript/TypeScript on both frontend and backend. Skilled in Express, NestJS,
+            <strong>MySQL</strong>, and <strong>Elasticsearch</strong>. Focus on high-performance,
+            scalable server-side architecture.
           </p>
 
           <h3>Experience</h3>
-          <h4>Full Stack Engineer | Freelancer | Jun 2023 - Present</h4>
+          <h4>Full Stack Engineer | Contractor | Jun 2023 - Present</h4>
           <ul>
             <li>
-              Focus on developing web applications using <strong>React</strong>
-              and Node.js ecosystem.
+              Built <strong>elevator appointment API</strong> with <strong>Node.js/Express</strong>,
+              implementing booking logic, slot management, and notifications
             </li>
             <li>
-              Contributed to an elevator appointment system using React,
-              <strong>Next.js</strong>, Tailwind Css, and Ant Design.
+              Developed <strong>order tracking service</strong> with real-time
+              WebSocket updates and notifications
             </li>
             <li>
-              Built a photovoltaic power monitoring system with
-              <strong>Vue</strong>and ElementUI.
-            </li>
-            <li>
-              Contributed to a smart cabinet system with Vue3,
-              <strong>Antd</strong>, and Java, ensuring secure material storage
-              in campus labs and reducing hazardous incidents.
+              Created <strong>smart cabinet REST API</strong> with authentication, inventory tracking,
+              and audit logging
             </li>
           </ul>
 
@@ -78,13 +68,18 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Led the development of a campus e-commerce system, integrating
-              third-party suppliers and financial systems.
+              Led backend development of campus e-commerce platform processing $10M+ annually
             </li>
             <li>
-              Implemented automated SKU management and reimbursement processes
-              with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and
-              Alibaba Cloud.
+              Built <strong>Node.js API gateway</strong> integrating third-party suppliers,
+              payment systems, and logistics providers
+            </li>
+            <li>
+              Implemented <strong>Elasticsearch</strong> search service for product catalog,
+              handling 100K+ SKUs
+            </li>
+            <li>
+              Designed database schema and <strong>MySQL</strong> optimization for high-traffic periods
             </li>
           </ul>
 
@@ -93,21 +88,26 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Contributed to value-added service systems by developing
-              solutions, performing testing, and debugging, enhancing customer
-              satisfaction and telecom functionality
+              Developed telecom backend services using <strong>Node.js</strong> and Java
             </li>
           </ul>
 
           <h3>Education&Skills</h3>
           <ul>
             <li>
-              Computer Science and Technology, Jiangsu University of Science and
-              Technology
+              Computer Science and Technology, Jiangsu University of Science and Technology
             </li>
             <li className="text-wrap">
-              HTML/CSS/TypeScript/JavaScript/Vue/React/jQuery/Tailwind
-              Css/AntDesign/ElementUI/Node/Java
+              <strong>Node.js:</strong> Express/NestJS/Fastify
+            </li>
+            <li className="text-wrap">
+              <strong>Database:</strong> MySQL/Elasticsearch/Redis/MongoDB
+            </li>
+            <li className="text-wrap">
+              <strong>API:</strong> REST/GraphQL/WebSocket/OpenAPI
+            </li>
+            <li className="text-wrap">
+              <strong>DevOps:</strong> Docker/Kubernetes/Alibaba Cloud
             </li>
           </ul>
         </main>

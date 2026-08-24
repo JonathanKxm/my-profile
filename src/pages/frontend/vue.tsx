@@ -25,16 +25,13 @@ export default function CV() {
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan</h1>
             <h2 className="text-base md:text-xl font-semibold">
-              Fullstack Web Developer
+              Vue.js Frontend Developer
             </h2>
           </div>
           <div>
             <a className="block" href="mailto:jonathankxm@gmail.com">
               Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
-            {/* <a className="block" href="tel:+8617602553940">
-              (+86)17602553940
-            </a> */}
             <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
           </div>
         </header>
@@ -42,34 +39,26 @@ export default function CV() {
         <main>
           <h3>Summary</h3>
           <p>
-            Full Stack Developer with 10+ years' experience in
-            <strong>HTML</strong>,<strong>CSS</strong>,
-            <strong>JavaScript</strong>,<strong>Node.js</strong> and Java,and
-            Skill in <strong>React</strong> and <strong>Vue</strong>. Proactive
-            problem-solver committed to mastering new technologies. Thrives in
-            fast-paced environments, delivering innovative solutions and
-            collaborating within cross-functional teams.
+            Frontend Developer specializing in <strong>Vue.js</strong> ecosystem with 10+ years
+            of experience building responsive, user-friendly web applications. Expert in Vue 2/3,
+            <strong>ElementUI</strong>, <strong>Ant Design Vue</strong>, and modern CSS frameworks.
+            Proven ability to create reusable components, implement complex state management,
+            and optimize frontend performance.
           </p>
 
           <h3>Experience</h3>
-          <h4>Full Stack Engineer | Freelancer | Jun 2023 - Present</h4>
+          <h4>Full Stack Engineer | Contractor | Jun 2023 - Present</h4>
           <ul>
             <li>
-              Focus on developing web applications using <strong>React</strong>
-              and Node.js ecosystem.
+              Built <strong>order management dashboard</strong> with Vue3,
+              ElementUI, featuring real-time updates and data visualization
             </li>
             <li>
-              Contributed to an elevator appointment system using React,
-              <strong>Next.js</strong>, Tailwind Css, and Ant Design.
+              Developed <strong>smart cabinet management system</strong> using Vue3,
+              <strong>Ant Design Vue</strong>, providing safe material storage for campus labs
             </li>
             <li>
-              Built a photovoltaic power monitoring system with
-              <strong>Vue</strong>and ElementUI.
-            </li>
-            <li>
-              Contributed to a smart cabinet system with Vue3,
-              <strong>Antd</strong>, and Java, ensuring secure material storage
-              in campus labs and reducing hazardous incidents.
+              Created reusable component library supporting multiple client projects
             </li>
           </ul>
 
@@ -78,13 +67,15 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Led the development of a campus e-commerce system, integrating
-              third-party suppliers and financial systems.
+              Led frontend development of campus e-commerce platform using <strong>Vue2</strong>
+              and <strong>ElementUI</strong>, serving 500+ universities
             </li>
             <li>
-              Implemented automated SKU management and reimbursement processes
-              with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and
-              Alibaba Cloud.
+              Implemented automated SKU management interface with complex forms,
+              validation, and real-time updates
+            </li>
+            <li>
+              Built responsive admin dashboard with data tables, charts, and export functionality
             </li>
           </ul>
 
@@ -93,21 +84,26 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Contributed to value-added service systems by developing
-              solutions, performing testing, and debugging, enhancing customer
-              satisfaction and telecom functionality
+              Developed telecom service interfaces using jQuery and vanilla JavaScript
             </li>
           </ul>
 
           <h3>Education&Skills</h3>
           <ul>
             <li>
-              Computer Science and Technology, Jiangsu University of Science and
-              Technology
+              Computer Science and Technology, Jiangsu University of Science and Technology
             </li>
             <li className="text-wrap">
-              HTML/CSS/TypeScript/JavaScript/Vue/React/jQuery/Tailwind
-              Css/AntDesign/ElementUI/Node/Java
+              <strong>Vue:</strong> Vue2/Vue3/Composition API/Pinia/Vue Router
+            </li>
+            <li className="text-wrap">
+              <strong>UI Libraries:</strong> ElementUI/Ant Design Vue/Vuetify
+            </li>
+            <li className="text-wrap">
+              <strong>CSS:</strong> Tailwind CSS/SCSS/CSS3/Flexbox/Grid
+            </li>
+            <li className="text-wrap">
+              <strong>Tools:</strong> Vite/Webpack/Git/DevTools
             </li>
           </ul>
         </main>

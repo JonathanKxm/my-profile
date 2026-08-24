@@ -25,16 +25,13 @@ export default function CV() {
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan</h1>
             <h2 className="text-base md:text-xl font-semibold">
-              Fullstack Web Developer
+              React.js Frontend Developer
             </h2>
           </div>
           <div>
             <a className="block" href="mailto:jonathankxm@gmail.com">
               Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
-            {/* <a className="block" href="tel:+8617602553940">
-              (+86)17602553940
-            </a> */}
             <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
           </div>
         </header>
@@ -42,34 +39,27 @@ export default function CV() {
         <main>
           <h3>Summary</h3>
           <p>
-            Full Stack Developer with 10+ years' experience in
-            <strong>HTML</strong>,<strong>CSS</strong>,
-            <strong>JavaScript</strong>,<strong>Node.js</strong> and Java,and
-            Skill in <strong>React</strong> and <strong>Vue</strong>. Proactive
-            problem-solver committed to mastering new technologies. Thrives in
-            fast-paced environments, delivering innovative solutions and
-            collaborating within cross-functional teams.
+            Frontend Developer with strong focus on <strong>React</strong> and modern
+            JavaScript frameworks. 10+ years experience building dynamic single-page applications,
+            <strong>Next.js</strong> SSR apps, and responsive interfaces. Skilled in state management,
+            component architecture, and delivering pixel-perfect UIs with <strong>Ant Design</strong>
+            and <strong>Tailwind CSS</strong>.
           </p>
 
           <h3>Experience</h3>
-          <h4>Full Stack Engineer | Freelancer | Jun 2023 - Present</h4>
+          <h4>Full Stack Engineer | Contractor | Jun 2023 - Present</h4>
           <ul>
             <li>
-              Focus on developing web applications using <strong>React</strong>
-              and Node.js ecosystem.
+              Built <strong>elevator appointment system</strong> with React, <strong>Next.js</strong>,
+              <strong>Tailwind CSS</strong>, and <strong>Ant Design</strong>, featuring
+              booking calendar and real-time availability
             </li>
             <li>
-              Contributed to an elevator appointment system using React,
-              <strong>Next.js</strong>, Tailwind Css, and Ant Design.
+              Developed <strong>order tracking dashboard</strong> with React,
+              interactive charts, and live status updates
             </li>
             <li>
-              Built a photovoltaic power monitoring system with
-              <strong>Vue</strong>and ElementUI.
-            </li>
-            <li>
-              Contributed to a smart cabinet system with Vue3,
-              <strong>Antd</strong>, and Java, ensuring secure material storage
-              in campus labs and reducing hazardous incidents.
+              Implemented smart cabinet UI with complex forms, authentication, and role-based access
             </li>
           </ul>
 
@@ -78,13 +68,13 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Led the development of a campus e-commerce system, integrating
-              third-party suppliers and financial systems.
+              Led frontend architecture for campus e-commerce platform serving 500+ universities
             </li>
             <li>
-              Implemented automated SKU management and reimbursement processes
-              with Vue2, ElementUI, Java, Spring, MySQL, Elasticsearch, and
-              Alibaba Cloud.
+              Migrated legacy jQuery interfaces to modern <strong>React</strong> components
+            </li>
+            <li>
+              Built automated SKU management dashboard with real-time validation and notifications
             </li>
           </ul>
 
@@ -93,21 +83,26 @@ export default function CV() {
           </h4>
           <ul>
             <li>
-              Contributed to value-added service systems by developing
-              solutions, performing testing, and debugging, enhancing customer
-              satisfaction and telecom functionality
+              Developed telecom service interfaces using JavaScript and AJAX
             </li>
           </ul>
 
           <h3>Education&Skills</h3>
           <ul>
             <li>
-              Computer Science and Technology, Jiangsu University of Science and
-              Technology
+              Computer Science and Technology, Jiangsu University of Science and Technology
             </li>
             <li className="text-wrap">
-              HTML/CSS/TypeScript/JavaScript/Vue/React/jQuery/Tailwind
-              Css/AntDesign/ElementUI/Node/Java
+              <strong>React:</strong> React 18/Hooks/Context/Next.js/React Router
+            </li>
+            <li className="text-wrap">
+              <strong>State:</strong> Redux/Zustand/React Query/SWR
+            </li>
+            <li className="text-wrap">
+              <strong>UI:</strong> Ant Design/Material UI/Tailwind CSS/Chakra UI
+            </li>
+            <li className="text-wrap">
+              <strong>Build:</strong> Vite/Webpack/TypeScript
             </li>
           </ul>
         </main>
