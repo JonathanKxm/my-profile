@@ -37,3 +37,36 @@ export const ExperienceSection = ({ entries }: { entries: StarEntry[] }) => (
     ))}
   </div>
 )
+
+const EMAIL = "jonathankxm@gmail.com"
+
+/**
+ * Standard page header used on every page of the printable CV. Renders the
+ * candidate's name, the stack-specific title, and contact info. The email
+ * link is tagged with `data-mailto="1"` so the PDF exporter can locate it and
+ * overlay a real clickable `mailto:` annotation.
+ */
+export const PageHeader = ({
+  title,
+}: {
+  title: React.ReactNode
+}) => (
+  <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 border-b border-slate-200 pb-4 mb-5">
+    <div>
+      <h1 className="text-2xl font-bold text-slate-900">Jonathan</h1>
+      <h2 className="text-base font-semibold text-slate-700">{title}</h2>
+    </div>
+    <div className="text-sm text-slate-700 text-right">
+      <a
+        data-mailto="1"
+        className="block text-blue-700 underline"
+        href={`mailto:${EMAIL}`}
+      >
+        Email:&nbsp;&nbsp;{EMAIL}
+      </a>
+      <div>
+        Location: <span className="font-semibold">China</span>
+      </div>
+    </div>
+  </header>
+)

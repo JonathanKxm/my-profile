@@ -1,4 +1,42 @@
 import type { StackEntry } from "../../types/resume"
+import { PageHeader } from "./shared"
+
+const ExperienceBlock = ({
+  start,
+  end,
+  experience,
+}: {
+  start: number
+  end: number
+  experience: StackEntry["experience"]
+}) => (
+  <>
+    {experience.slice(start, end).map((e, idx) => (
+      <section key={`${e.role}-${start + idx}`} className="mb-4">
+        <h4 className="font-bold text-slate-900">
+          {e.role}{" "}
+          <span className="font-normal text-slate-600">| {e.period}</span>
+        </h4>
+        {e.scope && (
+          <p className="text-sm text-slate-600 italic mt-1">{e.scope}</p>
+        )}
+        {e.stack.length > 0 && (
+          <p className="text-xs text-slate-500 mt-1">
+            <span className="font-semibold text-slate-700">Stack:</span>{" "}
+            {e.stack.join(" · ")}
+          </p>
+        )}
+        <ul className="list-disc ml-5 mt-2 space-y-2">
+          {e.bullets.map((b, bi) => (
+            <li key={bi} className="leading-relaxed text-slate-800">
+              {b.narrative}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </>
+)
 
 const javascript: StackEntry = {
   stack: "javascript",
@@ -6,8 +44,8 @@ const javascript: StackEntry = {
   title: "JavaScript Full Stack Developer",
   summary: (
     <p>
-      JavaScript Full Stack Developer with 10+ years of experience
-      shipping product across the entire web stack. Strong across{" "}
+      JavaScript Full Stack Developer with extensive experience shipping
+      product across the entire web stack. Strong across{" "}
       <strong>TypeScript</strong>, <strong>React</strong>,{" "}
       <strong>Vue</strong>, and <strong>Node.js</strong>, plus the tooling
       (Webpack, Vite, ESLint) that keeps JavaScript codebases sane at
@@ -105,5 +143,35 @@ const javascript: StackEntry = {
   ),
   fileName: "Jonathan-JavaScript-Resume.pdf",
 }
+
+javascript.sections = [
+  // ── Page 1: Header + Summary + Experience (Contractor + Senior) ───────────
+  <>
+    <PageHeader title={javascript.title} />
+
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Summary</h3>
+      {javascript.summary}
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Experience
+      </h3>
+      <ExperienceBlock start={0} end={2} experience={javascript.experience} />
+    </main>
+  </>,
+
+  // ── Page 2: Experience (Junior) + Education & Skills ───────────────────────
+  <>
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Experience</h3>
+      <ExperienceBlock start={2} end={3} experience={javascript.experience} />
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Education &amp; Skills
+      </h3>
+      {javascript.skills}
+    </main>
+  </>,
+]
 
 export default javascript

@@ -9,7 +9,7 @@ const vue: StackEntry = {
       Vue Frontend Developer with deep experience across{" "}
       <strong>Vue 2</strong>, <strong>Vue 3</strong>, and the wider Vue
       ecosystem (<strong>Pinia</strong>, <strong>Vue Router</strong>,{" "}
-      <strong>Vite</strong>). 10+ years building responsive,
+      <strong>Vite</strong>). Extensive experience building responsive,
       component-driven UIs with <strong>ElementUI</strong>,{" "}
       <strong>Ant Design Vue</strong>, and modern CSS frameworks. Strong
       eye for interaction polish and frontend performance.

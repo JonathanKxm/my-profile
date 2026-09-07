@@ -38,7 +38,7 @@ function Bio() {
           </motion.div>
         </h3>
         <p className="text-justify leading-7 mx-auto">
-          I'm Jonathan, a full-stack developer with 10+ years of experience
+          I'm Jonathan, a full-stack developer with extensive experience
           building scalable web applications across frontend, backend, and
           everything in between. Skilled in the modern JavaScript ecosystem
           (React, Vue, Node.js) and enterprise Java (Spring). Passionate about

@@ -6,7 +6,7 @@ const react: StackEntry = {
   title: "React Frontend Developer",
   summary: (
     <p>
-      React Frontend Developer with 10+ years of experience shipping
+      React Frontend Developer with extensive experience shipping
       production UIs. Strong focus on component architecture, performance,
       and accessibility. Deep experience with <strong>Next.js</strong>{" "}
       (SSR/SSG/ISR), modern state libraries, and design systems like{" "}

@@ -1,4 +1,42 @@
 import type { StackEntry } from "../../types/resume"
+import { PageHeader } from "./shared"
+
+const ExperienceBlock = ({
+  start,
+  end,
+  experience,
+}: {
+  start: number
+  end: number
+  experience: StackEntry["experience"]
+}) => (
+  <>
+    {experience.slice(start, end).map((e, idx) => (
+      <section key={`${e.role}-${start + idx}`} className="mb-4">
+        <h4 className="font-bold text-slate-900">
+          {e.role}{" "}
+          <span className="font-normal text-slate-600">| {e.period}</span>
+        </h4>
+        {e.scope && (
+          <p className="text-sm text-slate-600 italic mt-1">{e.scope}</p>
+        )}
+        {e.stack.length > 0 && (
+          <p className="text-xs text-slate-500 mt-1">
+            <span className="font-semibold text-slate-700">Stack:</span>{" "}
+            {e.stack.join(" · ")}
+          </p>
+        )}
+        <ul className="list-disc ml-5 mt-2 space-y-2">
+          {e.bullets.map((b, bi) => (
+            <li key={bi} className="leading-relaxed text-slate-800">
+              {b.narrative}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </>
+)
 
 const java: StackEntry = {
   stack: "java",
@@ -6,7 +44,7 @@ const java: StackEntry = {
   title: "Java Backend Developer",
   summary: (
     <p>
-      Java Backend Developer with 15+ years of experience building
+      Java Backend Developer with extensive experience building
       enterprise-grade, transaction-heavy systems on the JVM. Deep expertise
       in <strong>Spring Boot</strong>, <strong>Spring MVC</strong>,{" "}
       <strong>Spring Cloud</strong>, and database internals (
@@ -97,5 +135,35 @@ const java: StackEntry = {
   ),
   fileName: "Jonathan-Java-Resume.pdf",
 }
+
+java.sections = [
+  // ── Page 1: Header + Summary + Experience (Senior, Backend Lead) ──────────
+  <>
+    <PageHeader title={java.title} />
+
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Summary</h3>
+      {java.summary}
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Experience
+      </h3>
+      <ExperienceBlock start={0} end={1} experience={java.experience} />
+    </main>
+  </>,
+
+  // ── Page 2: Experience (Junior → Mid) + Education & Skills ────────────────
+  <>
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Experience</h3>
+      <ExperienceBlock start={1} end={2} experience={java.experience} />
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Education &amp; Skills
+      </h3>
+      {java.skills}
+    </main>
+  </>,
+]
 
 export default java

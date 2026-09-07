@@ -1,4 +1,42 @@
 import type { StackEntry } from "../../types/resume"
+import { PageHeader } from "./shared"
+
+const ExperienceBlock = ({
+  start,
+  end,
+  experience,
+}: {
+  start: number
+  end: number
+  experience: StackEntry["experience"]
+}) => (
+  <>
+    {experience.slice(start, end).map((e, idx) => (
+      <section key={`${e.role}-${start + idx}`} className="mb-4">
+        <h4 className="font-bold text-slate-900">
+          {e.role}{" "}
+          <span className="font-normal text-slate-600">| {e.period}</span>
+        </h4>
+        {e.scope && (
+          <p className="text-sm text-slate-600 italic mt-1">{e.scope}</p>
+        )}
+        {e.stack.length > 0 && (
+          <p className="text-xs text-slate-500 mt-1">
+            <span className="font-semibold text-slate-700">Stack:</span>{" "}
+            {e.stack.join(" · ")}
+          </p>
+        )}
+        <ul className="list-disc ml-5 mt-2 space-y-2">
+          {e.bullets.map((b, bi) => (
+            <li key={bi} className="leading-relaxed text-slate-800">
+              {b.narrative}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </>
+)
 
 const node: StackEntry = {
   stack: "node",
@@ -8,8 +46,8 @@ const node: StackEntry = {
     <p>
       Node.js Backend Developer focused on building high-throughput{" "}
       <strong>RESTful</strong> and <strong>real-time</strong> services with{" "}
-      <strong>TypeScript</strong>. 10+ years of JavaScript experience with
-      <strong> Express</strong>, and{" "}
+      <strong>TypeScript</strong> and extensive experience across the
+      JavaScript ecosystem, including <strong>Express</strong> and{" "}
       <strong>WebSocket</strong> systems. Comfortable owning the full
       service: schema, API contract, auth, deployment, and observability.
     </p>
@@ -126,5 +164,35 @@ const node: StackEntry = {
   ),
   fileName: "Jonathan-Node-Resume.pdf",
 }
+
+node.sections = [
+  // ── Page 1: Header + Summary + Experience (Contractor) ────────────────────
+  <>
+    <PageHeader title={node.title} />
+
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Summary</h3>
+      {node.summary}
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Experience
+      </h3>
+      <ExperienceBlock start={0} end={1} experience={node.experience} />
+    </main>
+  </>,
+
+  // ── Page 2: Experience (Senior + Junior) + Education & Skills ──────────────
+  <>
+    <main className="text-sm leading-relaxed text-slate-800">
+      <h3 className="text-base font-bold text-slate-900 mb-2">Experience</h3>
+      <ExperienceBlock start={1} end={3} experience={node.experience} />
+
+      <h3 className="text-base font-bold text-slate-900 mt-6 mb-2">
+        Education &amp; Skills
+      </h3>
+      {node.skills}
+    </main>
+  </>,
+]
 
 export default node
