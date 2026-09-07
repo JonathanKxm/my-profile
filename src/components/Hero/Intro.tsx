@@ -18,16 +18,16 @@ export default function Intro() {
       <TypeAnimation
         preRenderFirstString={true}
         sequence={[
-          "I'm a Fullstack developer.",
+          "I'm a fullstack developer.",
           1000,
-          "I'm a React developer.",
-          1200,
-          "I'm a Vue developer.",
-          800,
-          "I'm a Node developer.",
+          "Reliable.",
+          1000,
+          "Detail-oriented.",
+          1000,
+          "Problem solver.",
+          1000,
+          "Team player.",
           500,
-          "I'm a Java developer.",
-          300,
         ]}
         speed={50}
         wrapper="div"
@@ -43,8 +43,7 @@ export default function Intro() {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-gray-200 max-w-[500px] lg:max-w-[600px] text-lg lg:text-2xl mb-6"
       >
-        I'm a passionate fullstack web developer with over 10+ years of
-        experience.
+        A fullstack developer crafting elegant solutions across frontend, backend, and everything in between.
       </motion.p>
     </>
   )

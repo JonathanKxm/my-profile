@@ -1,44 +1,42 @@
 import { motion } from "framer-motion"
+
 const experiences = [
   {
-    company: "Freelancer",
+    company: "Full Stack Engineer / Contractor",
     period: "2023 ~ Present",
     description: [
       "Focus on developing web applications using React and Node.js ecosystem.",
-      "Developed an elevator maintenance appointment system using React, Next.js, Tailwincss, and Ant Design.",
+      "Developed an elevator maintenance appointment system using React, Next.js, Tailwind CSS, and Ant Design.",
       "Built a photovoltaic power monitoring system with Vue and ElementUI.",
-      "Created a smart cabinet system with Vue3, Antd, and Java, ensuring secure material storage in campus labs and reducing hazardous incidents.",
-    ],
-  },
-  {
-    company: "NkStar Ltd.",
-    period: "2020 ~ 2023",
-    description: [
-      "Developed management systems for enterprises like ERP and OA Oversaw software development teams and client communication, achieving project objectives by fostering collaboration.",
+      "Created a smart cabinet system with Vue3, Ant Design, and Java, ensuring secure material storage in campus labs.",
+      "Developed a Windows ship performance monitoring client using Python and PyQt5, featuring real-time propulsion data visualization, fuel consumption tracking, trim optimization analysis, and CO2 emission reporting with trend analysis dashboards.",
     ],
   },
   {
     company: "Wisedu Education Ltd.",
-    period: "2012 ~ 2020",
+    period: "2014 ~ 2023",
     description: [
-      "Led the development of a campus e-commerce system, integrating third-party suppliers and financial systems.",
+      "Senior Software Engineer leading the campus e-commerce platform serving 500+ universities, managing $10M+ annual transactions.",
+      "Architected automated SKU management and financial reimbursement system using Vue2, Java Spring, MySQL, and Elasticsearch.",
+      "Built integration layer with third-party suppliers and payment systems, reducing manual processing by 80%.",
     ],
   },
   {
-    company: "AsiaInfo fo Technology Ltd.",
-    period: "2008 ~ 2012",
+    company: "AsiaInfo Technology Ltd.",
+    period: "2008 ~ 2014",
     description: [
-      "Contributed to value-added service systems by developing solutions, performing testing, and debugging, and enhancing customer satisfaction and telecom functionality.",
+      "Developed telecom value-added service systems using Java and Oracle.",
+      "Performed system testing and debugging, improving service reliability by 30%.",
     ],
   },
 ]
+
 function Experience() {
   return (
     <div className="px-8 max-w-screen-md mx-auto split-line my-0 pt-0 md:my-24 md:pt-24">
       <h1 className="text-2xl md:text-4xl text-gray-200 font-bold text-center mb-12">
         Experience
       </h1>
-      {/* <img src="/experience.jpg" /> */}
       <motion.div className="space-y-8" initial="hidden" animate="visible">
         {experiences.map((item, index) => (
           <motion.div
@@ -56,8 +54,8 @@ function Experience() {
               <p className="text-gray-200">{item.period}</p>
             </div>
             <div className="mt-4 text-gray-300">
-              {item.description.map((item, index) => (
-                <p key={index}>{item}</p>
+              {item.description.map((desc, idx) => (
+                <p key={idx}>{desc}</p>
               ))}
             </div>
           </motion.div>

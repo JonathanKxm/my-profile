@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Intro from "./Intro"
 import SocialMedia from "../SocialMedia"
-import Profile from "./Profile"
+import CodeDecor from "./CodeDecor"
 import TechStack from "./TechStack"
 import { ShinyEffect } from "../ShinyEffect"
 import { GrDocumentPdf } from "react-icons/gr"
@@ -46,7 +46,7 @@ function Hero() {
             <SocialMedia />
           </motion.div>
         </motion.div>
-        <Profile />
+        <CodeDecor />
       </div>
       <TechStack />
       <div className="absolute inset-0 hidden lg:block">

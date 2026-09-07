@@ -1,4 +1,4 @@
-function Form() {
+function MsgForm() {
   return (
     <form
       className="text-gray-800 font-bold text-xl mb-2 mt-10 md:mt-0"
@@ -38,4 +38,4 @@ function Form() {
   )
 }
 
-export default Form
+export default MsgForm

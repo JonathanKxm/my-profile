@@ -1,23 +1,27 @@
-type params = {
+type Params = {
+  /** Horizontal offset in pixels from the left edge. */
   left?: number
-  right?: number
+  /** Width and height of the shiny element. Defaults to 500px. */
   size?: number
+  /** Vertical offset in pixels from the top edge. Required. */
   top: number
 }
 
-export const ShinyEffect = ({ left, right, top, size = 500 }: params) => {
-  const positionStyles = {
-    top: `${top}px`,
-    width: `${size}px`,
-    height: `${size}px`,
-    zIndex: -1,
-    left: "0px",
-    right: "0px",
-  }
-
-  if (left) positionStyles.left = `${left}px`
-
-  if (right) positionStyles.right = `${right}px`
-
-  return <div className="shiny-effect" style={positionStyles}></div>
+/**
+ * A decorative glowing element positioned absolutely on the page.
+ * Renders behind content (zIndex: -1) and is used to add subtle ambient lighting.
+ */
+export const ShinyEffect = ({ left = 0, top, size = 500 }: Params) => {
+  return (
+    <div
+      className="shiny-effect"
+      style={{
+        top: `${top}px`,
+        left: `${left}px`,
+        width: `${size}px`,
+        height: `${size}px`,
+        zIndex: -1,
+      }}
+    />
+  )
 }

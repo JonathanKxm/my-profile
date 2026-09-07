@@ -6,6 +6,22 @@ import { Project } from "../../types/project"
 
 const projects: Project[] = [
   {
+    title: "Shaft Power Meter",
+    summary:
+      "A Windows desktop application for the maritime industry that acquires strain gauge data from JM3846 TCP Modbus sources and computes torque, thrust, and rotational speed. Provides EEXI compliance power monitoring, voyage report generation, and integrates with PLC and GPS devices.",
+    image: "https://profile.jonathancode.tech/shaftpowermeter.png",
+    url: "#",
+    techStack: ["python 3.12", "qt6", "modbus", "plc", "gps"],
+  },
+  {
+    title: "Playwright E2E Automation Test Framework",
+    summary:
+      "An end-to-end web automation testing framework built on Node.js, Express, and Playwright. Provides a unified REST API and dashboard to trigger cross-browser test runs (Chromium, Firefox, WebKit), capture screenshots/videos/traces on failure, and generate detailed HTML/Allure reports. Supports parallel execution, environment-based configuration, scheduled CI jobs, and integration with GitHub Actions for regression testing of web applications.",
+    image: "https://profile.jonathancode.tech/playwrightNodejs.png",
+    url: "#",
+    techStack: ["nodejs", "express", "playwright", "typescript", "docker"],
+  },
+  {
     title: "LiftHub",
     summary:
       "Create a platform connecting businesses, elevator technicians, and service providers for streamlined elevator maintenance.",
@@ -48,7 +64,7 @@ function Portfolio() {
           }`}
         >
           <motion.div
-            className="md:w-1/2 md:h-80 shadow-2xl shadow-jonathan-light/20"
+            className="md:w-1/2 shadow-2xl shadow-jonathan-light/20"
             initial={{ opacity: 0, translateY: "-50px" }}
             whileInView={{ opacity: 1, translateY: "0px" }}
             transition={{ duration: 1.2, delay: 0.2 }}
@@ -56,7 +72,7 @@ function Portfolio() {
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-auto object-contain rounded-lg"
             />
           </motion.div>
           <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
@@ -65,14 +81,16 @@ function Portfolio() {
             </h3>
             <p className="text-gray-300 mb-4">{item.summary}</p>
             <div className="flex space-x-4">
-              <a
-                target="_blank"
-                href={item.url}
-                className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
-              >
-                <FaLink />
-                <span className="ml-2">Visit</span>
-              </a>
+              {item.url && item.url !== "#" && (
+                <a
+                  target="_blank"
+                  href={item.url}
+                  className="px-4 py-2 bg-jonathan-main text-gray-200 rounded-lg hover:bg-jonathan-main/60 transition duration-300 flex items-center justify-center"
+                >
+                  <FaLink />
+                  <span className="ml-2">Visit</span>
+                </a>
+              )}
 
               {item.github && (
                 <a
