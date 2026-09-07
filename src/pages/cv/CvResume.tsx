@@ -1,7 +1,8 @@
 import { BiDownload } from "react-icons/bi"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { saveAs } from "file-saver"
-import { findStack, STACKS } from "../../data/resumes"
+import { findStack } from "../../data/resumes"
+import { ExperienceSection } from "../../data/resumes/shared"
 
 const BASE_PDF_URL = "https://profile.jonathancode.tech"
 
@@ -42,25 +43,23 @@ export default function CvResume() {
       <button
         type="button"
         onClick={downloadCV}
-        className="block text-center w-48 h-12 mx-auto rounded bg-slate-600 text-white hover:bg-slate-600/90 font-semibold cursor-pointer flex items-center justify-center sticky top-10 border-0"
+        className="block text-center w-48 h-12 mx-auto rounded bg-slate-600 hover:bg-slate-600/90 font-semibold cursor-pointer flex items-center justify-center sticky top-10 border-0"
       >
-        <BiDownload className="text-gray-300 text-xl" />
-        <span className="ml-2">Download CV</span>
+        <BiDownload className="text-xl !text-white" />
+        <span className="ml-2 !text-white">Download CV</span>
       </button>
 
       <div className="bg-white max-w-screen-lg mx-auto px-5 pt-10 pb-20 shadow-lg rounded mt-10">
         <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-0">
           <div>
             <h1 className="text-xl md:text-2xl font-bold">Jonathan</h1>
-            <h2 className="text-base md:text-xl font-semibold">
-              {entry.title}
-            </h2>
+            <h2 className="text-base md:text-xl font-semibold">{entry.title}</h2>
           </div>
           <div>
             <a className="block" href="mailto:jonathankxm@gmail.com">
               Email:&nbsp;&nbsp;jonathankxm@gmail.com
             </a>
-            <div>Location:&nbsp;&nbsp;Jiangsu, China</div>
+            <div>Location: <span className="font-semibold">China</span></div>
           </div>
         </header>
 
@@ -69,27 +68,11 @@ export default function CvResume() {
           {entry.summary}
 
           <h3>Experience</h3>
-          {entry.experience}
+          <ExperienceSection entries={entry.experience} />
 
           <h3>Education &amp; Skills</h3>
           {entry.skills}
         </main>
-
-        <footer className="mt-12 pt-6 border-t border-slate-200">
-          <p className="text-sm text-slate-500 mb-3">Other resumes:</p>
-          <ul className="flex flex-wrap gap-3">
-            {STACKS.filter((s) => s.stack !== entry.stack).map((s) => (
-              <li key={s.stack}>
-                <Link
-                  to={`/${s.stack}/cv`}
-                  className="text-blue-600 underline text-sm"
-                >
-                  /{s.stack}/cv
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </footer>
       </div>
     </div>
   )

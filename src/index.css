@@ -60,4 +60,8 @@ span {
   strong {
     @apply mx-1;
   }
+
+  span {
+    @apply text-slate-800;
+  }
 }
