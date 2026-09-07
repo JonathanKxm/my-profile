@@ -1,5 +1,5 @@
 import { BiDownload } from "react-icons/bi"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { saveAs } from "file-saver"
 import { findStack } from "../../data/resumes"
 import { ExperienceSection } from "../../data/resumes/shared"
