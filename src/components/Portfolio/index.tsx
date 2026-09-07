@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Playwright E2E Automation Test Framework",
     summary:
       "An end-to-end web automation testing framework built on Node.js, Express, and Playwright. Provides a unified REST API and dashboard to trigger cross-browser test runs (Chromium, Firefox, WebKit), capture screenshots/videos/traces on failure, and generate detailed HTML/Allure reports. Supports parallel execution, environment-based configuration, scheduled CI jobs, and integration with GitHub Actions for regression testing of web applications.",
-    image: "https://profile.jonathancode.tech/playwrightNodejs.png",
+    image: "https://profile.jonathancode.tech/playwrightNodejs1.png",
     url: "#",
     techStack: ["nodejs", "express", "playwright", "typescript", "docker"],
   },
