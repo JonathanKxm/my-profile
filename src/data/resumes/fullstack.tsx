@@ -2,15 +2,15 @@ import type { StackEntry } from "../../types/resume"
 
 const fullstack: StackEntry = {
   stack: "fullstack",
-  label: "Full Stack Web Developer",
-  title: "Full Stack Web Developer",
+  label: "Full Stack Developer",
+  title: "Full Stack Developer",
   summary: (
     <p>
-      Full Stack Web Developer with extensive experience delivering
-      end-to-end web applications across the modern JavaScript ecosystem
-      (<strong>React</strong>, <strong>Next.js</strong>, <strong>Vue</strong>,{" "}
-      <strong>Node.js</strong>) and enterprise Java (
-      <strong>Spring Boot</strong>). Comfortable owning the full SDLC: from
+      Full Stack Developer with extensive experience in{" "}
+      <strong>Java</strong> (longest tenure) and modern web technologies
+      (<strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>,
+      <strong>Vue</strong>). Also develops desktop applications using{" "}
+      <strong>Python + PySide6</strong>. Comfortable owning the full SDLC: from
       domain modeling and database design to component architecture,
       deployment, and observability.
     </p>
@@ -20,48 +20,59 @@ const fullstack: StackEntry = {
       role: "Full Stack Engineer (Contractor)",
       period: "Jun 2023 - Present",
       scope: "Cross-stack delivery: React/Next.js + Vue/ElementUI + Node.js/Express APIs",
-      stack: ["React", "Next.js", "Vue 3", "ElementUI", "Node.js", "Express", "MySQL"],
+      stack: ["React", "Next.js", "Vue", "ElementUI", "Node.js", "Express", "MySQL", "Python", "PySide6"],
       bullets: [
         {
           narrative: (
             <>
-              As the sole engineer on a property-management engagement, I owned
-              the full stack of a slot-based elevator booking system — a{" "}
-              <strong>Node.js/Express</strong> REST API with transactional slot
-              allocation, a <strong>React/Next.js</strong> customer booking UI
-              with <strong>Tailwind</strong>, and a <strong>Vue 3</strong> admin
-              console for property staff. I cut average booking time from ~6
-              minutes (phone + email) to under 30 seconds and eliminated
-              double-booked slots entirely.
+              Contributed to a slot-based elevator booking system for a
+              property-management platform. I owned the{" "}
+              <strong>React/Next.js</strong> customer booking UI with{" "}
+              <strong>Tailwind</strong>, while the backend{" "}
+              <strong>Node.js/Express</strong> REST API was primarily handled
+              by another team member.
             </>
           ),
         },
         {
           narrative: (
             <>
-              I built a live order tracking dashboard for an operations team
-              suffering from no real-time visibility across two disjoint tools.
-              On the frontend I used <strong>Vue 3</strong> +{" "}
-              <strong>ElementUI</strong> with WebSocket-based status streaming;
-              on the backend I shipped an <strong>Express</strong> service with{" "}
-              <strong>Redis</strong> pub/sub for fan-out. Status lookup latency
-              dropped from ~2 minutes to sub-second push updates, and
-              "where is my order" support tickets fell ~80%.
+              Built a Playwright E2E automation test framework on{" "}
+              <strong>Node.js</strong> and <strong>Express</strong> that
+              provides a unified REST API and dashboard for triggering
+              cross-browser test runs (<strong>Chromium</strong>,{" "}
+              <strong>Firefox</strong>, <strong>WebKit</strong>). Captures
+              screenshots, videos, and traces on failure; generates detailed{" "}
+              <strong>HTML/Allure</strong> reports. Supports parallel
+              execution, environment-based configuration, scheduled CI jobs, and
+              integrates with <strong>GitHub Actions</strong>. Dashboard built
+              with <strong>Vue</strong> and <strong>ElementUI</strong>.
             </>
           ),
         },
         {
           narrative: (
             <>
-              I delivered the complete software layer for a smart lab cabinet
-              product — hardware that had no existing software. I built a{" "}
-              <strong>Node.js</strong> service with JWT-based role authorization,
-              hardware protocol handlers, and an append-only audit log backed by{" "}
-              <strong>MySQL</strong>, paired with a <strong>Vue 3</strong> +{" "}
-              <strong>Ant Design Vue</strong> admin portal for inventory and
-              access control. The lab passed its compliance audit on first
-              inspection, and monthly reconciliation dropped from 1 day/week to
-              ~10 minutes.
+              Developed a Campus Lab Smart Cabinet Management System for
+              campus laboratories to efficiently and securely store and manage
+              materials, including hazardous substances. Built with{" "}
+              <strong>Node.js</strong> service featuring JWT-based role
+              authorization, hardware protocol handlers, and an append-only
+              audit log backed by <strong>MySQL</strong>, paired with a{" "}
+              <strong>React</strong> admin portal.
+            </>
+          ),
+        },
+        {
+          narrative: (
+            <>
+              Developed a Windows desktop application for the maritime industry
+              using <strong>Python</strong> and <strong>PySide6</strong>. The
+              app acquires strain gauge data from <strong>JM3846 TCP
+              Modbus</strong> sources and computes torque, thrust, and
+              rotational speed. Provides <strong>EEXI compliance</strong>{" "}
+              power monitoring, voyage report generation, and integrates with{" "}
+              <strong>PLC</strong> and <strong>GPS</strong> devices.
             </>
           ),
         },
@@ -130,10 +141,13 @@ const fullstack: StackEntry = {
       <p>Education: B.Eng. Computer Science and Technology, Jiangsu University of Science and Technology (2004 - 2008)</p>
       <ul>
         <li className="text-wrap">
-          <strong>Frontend:</strong> React / Next.js / Vue 2/3 / Tailwind / Ant Design / ElementUI
+          <strong>Frontend:</strong> React / Next.js / Vue / Tailwind / Ant Design / ElementUI
         </li>
         <li className="text-wrap">
           <strong>Backend:</strong> Node.js / Express / Java Spring / Spring Boot
+        </li>
+        <li className="text-wrap">
+          <strong>Desktop:</strong> Python / PySide6
         </li>
         <li className="text-wrap">
           <strong>Database:</strong> MySQL / Elasticsearch / Redis / Oracle / MongoDB
