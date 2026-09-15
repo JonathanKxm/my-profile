@@ -8,73 +8,76 @@ const fullstack: StackEntry = {
     <p>
       Full Stack Developer with extensive experience in{" "}
       <strong>Java</strong> (longest tenure) and modern web technologies
-      (<strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>,
-      <strong>Vue</strong>). Also develops desktop applications using{" "}
-      <strong>Python + PySide6</strong> and <strong>Electron</strong>. Comfortable owning the full SDLC: from
-      domain modeling and database design to component architecture,
-      deployment, and observability.
+      (<strong>JavaScript</strong>, <strong>TypeScript</strong>,{" "}
+      <strong>Node.js</strong>, <strong>React</strong>, <strong>Next.js</strong>,
+      <strong>Vue</strong>). Also designs and develops desktop and mobile
+      applications using <strong>Python</strong> and <strong>Electron</strong>.
+      Comfortable owning the full SDLC: from domain modeling and database
+      design to component architecture, deployment, and observability.
     </p>
   ),
   experience: [
     {
       role: "Full Stack Engineer (Contractor)",
       period: "Jun 2023 - Present",
-      scope: "Cross-stack delivery: React/Next.js + Vue/ElementUI + Node.js/Express + Python desktop",
-      stack: ["React", "Next.js", "Vue", "ElementUI", "Node.js", "Express", "MySQL", "Python", "PySide6", "Electron", "UniApp"],
+      scope: "Cross-stack delivery: React/Next.js + Vue + Node.js + Python desktop",
+      stack: ["JavaScript", "TypeScript", "Python", "Java"],
       bullets: [
         {
           narrative: (
             <>
-              Developed a Windows desktop application for the maritime industry
-              using <strong>Python</strong> and <strong>PySide6</strong>. The
-              app acquires strain gauge data from <strong>JM3846 TCP
-              Modbus</strong> sources and computes torque, thrust, and
-              rotational speed. Provides <strong>EEXI compliance</strong>{" "}
-              power monitoring, voyage report generation, and integrates with{" "}
-              <strong>PLC</strong> and <strong>GPS</strong> devices.
+              Designed and developed a Windows desktop application for the
+              maritime industry using <strong>Python</strong> and{" "}
+              <strong>PySide6</strong>. The app acquires strain gauge data from{" "}
+              <strong>JM3846 TCP Modbus</strong> sources and computes torque,
+              thrust, and rotational speed. Provides{" "}
+              <strong>EEXI compliance</strong> power monitoring, voyage report
+              generation, and integrates with <strong>PLC</strong> and{" "}
+              <strong>GPS</strong> devices.
             </>
           ),
         },
         {
           narrative: (
             <>
-              Built a Playwright E2E automation test framework on{" "}
-              <strong>Node.js</strong> and <strong>Express</strong> that
-              provides a unified REST API and dashboard for triggering
-              cross-browser test runs (<strong>Chromium</strong>,{" "}
-              <strong>Firefox</strong>, <strong>WebKit</strong>). Captures
-              screenshots, videos, and traces on failure; generates detailed{" "}
-              <strong>HTML/Allure</strong> reports. Supports parallel
-              execution, environment-based configuration, scheduled CI jobs, and
-              integrates with <strong>GitHub Actions</strong>. Dashboard built
-              with <strong>Vue</strong> and <strong>ElementUI</strong>.
+              Designed and developed a Playwright E2E automation test
+              framework on <strong>Node.js</strong> and{" "}
+              <strong>Express</strong> that provides a unified REST API and
+              dashboard for triggering cross-browser test runs (
+              <strong>Chromium</strong>, <strong>Firefox</strong>,{" "}
+              <strong>WebKit</strong>). Captures screenshots, videos, and
+              traces on failure and generates detailed reports. Supports
+              parallel execution, environment-based configuration, scheduled
+              CI jobs, and integrates with{" "}
+              <strong>GitHub Actions</strong>.
             </>
           ),
         },
         {
           narrative: (
             <>
-              <em>(Volunteer project)</em> Contributed to a slot-based elevator
-              booking system for a property-management platform. I owned the{" "}
-              <strong>React/Next.js</strong> customer booking UI with{" "}
-              <strong>Tailwind</strong>, while the backend{" "}
-              <strong>Node.js/Express</strong> REST API was primarily handled
-              by another team member.
+              <em>(Volunteer project)</em> Designed and contributed to a
+              slot-based elevator booking system for a property-management
+              platform. I owned the <strong>React/Next.js</strong> customer
+              booking UI, while the backend <strong>Node.js/Express</strong>{" "}
+              REST API was primarily handled by another team member. The
+              project's CI/CD pipeline ran on{" "}
+              <strong>GitHub Actions</strong>.
             </>
           ),
         },
         {
           narrative: (
             <>
-              Developed a Campus Lab Smart Cabinet Management System for
-              campus laboratories to efficiently and securely store and manage
-              materials, including hazardous substances. Built a{" "}
+              Designed and developed a Campus Lab Smart Cabinet Management
+              System for campus laboratories to efficiently and securely store
+              and manage materials, including hazardous substances. Built a{" "}
               <strong>Node.js</strong> service featuring JWT-based role
               authorization, hardware protocol handlers, and an append-only
-              audit log backed by <strong>MySQL</strong>, paired with a{" "}
-              <strong>Vue</strong> + <strong>ElementUI</strong> mobile web
-              console and a <strong>UniApp</strong> mobile app for on-site
-              staff.
+              audit log backed by <strong>MySQL</strong>, paired with a
+              mobile web console and a native mobile app for on-site staff.
+              The build and deployment pipeline runs on{" "}
+              <strong>Jenkins</strong>.
             </>
           ),
         },
@@ -84,7 +87,7 @@ const fullstack: StackEntry = {
       role: "Senior Software Engineer",
       period: "Wisedu Education Ltd. | 2014/6 - 2023/06",
       scope: "Campus e-commerce platform · SKU + payment + search",
-      stack: ["Vue 2", "ElementUI", "Java", "Spring", "MySQL", "Elasticsearch", "Redis"],
+      stack: ["JavaScript", "Java"],
       bullets: [
         {
           narrative: (
@@ -104,23 +107,24 @@ const fullstack: StackEntry = {
         {
           narrative: (
             <>
-              I replaced a 3-day/month manual SKU and reimbursement reconciliation
-              workflow that was a constant source of audit findings. I wrote
-              idempotent <strong>MySQL</strong> stored-procedure jobs with
+              I replaced a 3-day/month manual SKU and reimbursement
+              reconciliation workflow that was a constant source of audit
+              findings. I designed and wrote idempotent{" "}
+              <strong>MySQL</strong> stored-procedure jobs with
               compensating-transaction logic for failed upstream payments, and
-              paired them with a Vue admin UI for review and exception handling.
-              Monthly close dropped from 3 days to ~2 hours, and year-end audit
-              adjustments fell to near zero.
+              paired them with a Vue admin UI for review and exception
+              handling. Monthly close dropped from 3 days to ~2 hours, and
+              year-end audit adjustments fell to near zero.
             </>
           ),
         },
       ],
     },
     {
-      role: "Junior Software Engineer",
+      role: "Java Software Engineer",
       period: "AsiaInfo Technology Ltd. | 2008/6 - 2014/6",
       scope: "Telecom value-added services · billing pipelines",
-      stack: ["Java", "JavaScript", "Oracle"],
+      stack: ["Java", "JavaScript"],
       bullets: [
         {
           narrative: (
@@ -143,19 +147,13 @@ const fullstack: StackEntry = {
       <p>Education: B.Eng. Computer Science and Technology, Jiangsu University of Science and Technology (2004 - 2008)</p>
       <ul>
         <li className="text-wrap">
-          <strong>Frontend:</strong> React / Next.js / Vue / Tailwind / Ant Design / ElementUI / UniApp
+          <strong>Languages:</strong> JavaScript / TypeScript / Python / Java
         </li>
         <li className="text-wrap">
-          <strong>Backend:</strong> Node.js / Express / Java Spring / Spring Boot
+          <strong>Database:</strong> MySQL / Elasticsearch / Redis / Oracle
         </li>
         <li className="text-wrap">
-          <strong>Desktop:</strong> Electron / Python / PySide6
-        </li>
-        <li className="text-wrap">
-          <strong>Database:</strong> MySQL / Elasticsearch / Redis / Oracle / MongoDB
-        </li>
-        <li className="text-wrap">
-          <strong>DevOps:</strong> Docker / Alibaba Cloud / Git / GitHub Actions / Linux
+          <strong>DevOps:</strong> Docker / Alibaba Cloud / Linux
         </li>
       </ul>
     </>
