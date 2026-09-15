@@ -10,7 +10,7 @@ const fullstack: StackEntry = {
       <strong>Java</strong> (longest tenure) and modern web technologies
       (<strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>,
       <strong>Vue</strong>). Also develops desktop applications using{" "}
-      <strong>Python + PySide6</strong>. Comfortable owning the full SDLC: from
+      <strong>Python + PySide6</strong> and <strong>Electron</strong>. Comfortable owning the full SDLC: from
       domain modeling and database design to component architecture,
       deployment, and observability.
     </p>
@@ -19,18 +19,19 @@ const fullstack: StackEntry = {
     {
       role: "Full Stack Engineer (Contractor)",
       period: "Jun 2023 - Present",
-      scope: "Cross-stack delivery: React/Next.js + Vue/ElementUI + Node.js/Express APIs",
-      stack: ["React", "Next.js", "Vue", "ElementUI", "Node.js", "Express", "MySQL", "Python", "PySide6"],
+      scope: "Cross-stack delivery: React/Next.js + Vue/ElementUI + Node.js/Express + Python desktop",
+      stack: ["React", "Next.js", "Vue", "ElementUI", "Node.js", "Express", "MySQL", "Python", "PySide6", "Electron", "UniApp"],
       bullets: [
         {
           narrative: (
             <>
-              Contributed to a slot-based elevator booking system for a
-              property-management platform. I owned the{" "}
-              <strong>React/Next.js</strong> customer booking UI with{" "}
-              <strong>Tailwind</strong>, while the backend{" "}
-              <strong>Node.js/Express</strong> REST API was primarily handled
-              by another team member.
+              Developed a Windows desktop application for the maritime industry
+              using <strong>Python</strong> and <strong>PySide6</strong>. The
+              app acquires strain gauge data from <strong>JM3846 TCP
+              Modbus</strong> sources and computes torque, thrust, and
+              rotational speed. Provides <strong>EEXI compliance</strong>{" "}
+              power monitoring, voyage report generation, and integrates with{" "}
+              <strong>PLC</strong> and <strong>GPS</strong> devices.
             </>
           ),
         },
@@ -53,26 +54,27 @@ const fullstack: StackEntry = {
         {
           narrative: (
             <>
-              Developed a Campus Lab Smart Cabinet Management System for
-              campus laboratories to efficiently and securely store and manage
-              materials, including hazardous substances. Built with{" "}
-              <strong>Node.js</strong> service featuring JWT-based role
-              authorization, hardware protocol handlers, and an append-only
-              audit log backed by <strong>MySQL</strong>, paired with a{" "}
-              <strong>React</strong> admin portal.
+              <em>(Volunteer project)</em> Contributed to a slot-based elevator
+              booking system for a property-management platform. I owned the{" "}
+              <strong>React/Next.js</strong> customer booking UI with{" "}
+              <strong>Tailwind</strong>, while the backend{" "}
+              <strong>Node.js/Express</strong> REST API was primarily handled
+              by another team member.
             </>
           ),
         },
         {
           narrative: (
             <>
-              Developed a Windows desktop application for the maritime industry
-              using <strong>Python</strong> and <strong>PySide6</strong>. The
-              app acquires strain gauge data from <strong>JM3846 TCP
-              Modbus</strong> sources and computes torque, thrust, and
-              rotational speed. Provides <strong>EEXI compliance</strong>{" "}
-              power monitoring, voyage report generation, and integrates with{" "}
-              <strong>PLC</strong> and <strong>GPS</strong> devices.
+              Developed a Campus Lab Smart Cabinet Management System for
+              campus laboratories to efficiently and securely store and manage
+              materials, including hazardous substances. Built a{" "}
+              <strong>Node.js</strong> service featuring JWT-based role
+              authorization, hardware protocol handlers, and an append-only
+              audit log backed by <strong>MySQL</strong>, paired with a{" "}
+              <strong>Vue</strong> + <strong>ElementUI</strong> mobile web
+              console and a <strong>UniApp</strong> mobile app for on-site
+              staff.
             </>
           ),
         },
@@ -141,13 +143,13 @@ const fullstack: StackEntry = {
       <p>Education: B.Eng. Computer Science and Technology, Jiangsu University of Science and Technology (2004 - 2008)</p>
       <ul>
         <li className="text-wrap">
-          <strong>Frontend:</strong> React / Next.js / Vue / Tailwind / Ant Design / ElementUI
+          <strong>Frontend:</strong> React / Next.js / Vue / Tailwind / Ant Design / ElementUI / UniApp
         </li>
         <li className="text-wrap">
           <strong>Backend:</strong> Node.js / Express / Java Spring / Spring Boot
         </li>
         <li className="text-wrap">
-          <strong>Desktop:</strong> Python / PySide6
+          <strong>Desktop:</strong> Electron / Python / PySide6
         </li>
         <li className="text-wrap">
           <strong>Database:</strong> MySQL / Elasticsearch / Redis / Oracle / MongoDB
