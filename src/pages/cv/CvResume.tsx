@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
 import { BiDownload } from "react-icons/bi"
 import { Link, useParams } from "react-router-dom"
 import html2canvas from "html2canvas"
@@ -143,18 +144,29 @@ export default function CvResume() {
 
   // ── Render ──────────────────────────────────────────────────────────────────
   return (
-    <div className="cv">
-      <button
-        type="button"
-        onClick={downloadCV}
-        disabled={isGenerating}
-        className="block text-center w-48 h-12 mx-auto rounded bg-slate-600 hover:bg-slate-600/90 font-semibold cursor-pointer flex items-center justify-center sticky top-10 border-0 disabled:opacity-60 disabled:cursor-wait"
-      >
-        <BiDownload className="text-xl !text-white" />
-        <span className="ml-2 !text-white">
-          {isGenerating ? "Generating..." : "Download CV"}
-        </span>
-      </button>
+    <div className="cv relative">
+      {/* Sticky download button — always visible while scrolling */}
+      <div className="fixed top-4 right-4 md:top-6 md:right-6 z-50">
+        <motion.button
+          initial={{ opacity: 0, x: 30, y: -10 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          whileHover={{ scale: 1.04, boxShadow: "0 0 16px 3px rgba(20,255,236,0.25), 0 4px 16px rgba(0,0,0,0.4)" }}
+          whileTap={{ scale: 0.96 }}
+          type="button"
+          onClick={downloadCV}
+          disabled={isGenerating}
+          aria-label="Download CV"
+          className="relative z-10 cursor-pointer inline-flex items-center gap-2 pl-3 pr-5 py-2.5 rounded-full shadow-lg bg-[#1a1a1a]/80 backdrop-blur-md border border-white/20 hover:border-white/40 hover:shadow-xl transition-all duration-300 overflow-hidden disabled:opacity-70 disabled:cursor-wait disabled:hover:scale-100"
+        >
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20 border border-white/30 flex-shrink-0">
+            <BiDownload className="text-white" size={13} />
+          </span>
+          <span className="text-white font-medium text-sm tracking-wide !text-white">
+            {isGenerating ? "Generating..." : "Download CV"}
+          </span>
+        </motion.button>
+      </div>
 
       {/* ── On-screen preview (one card per PDF page) ──────────────────────── */}
       <div className="flex flex-col items-center gap-6 mt-8">

@@ -53,19 +53,23 @@ export const PageHeader = ({
 }) => (
   <header className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 border-b border-slate-200 pb-4 mb-5">
     <div>
-      <h1 className="text-2xl font-bold text-slate-900">Jonathan</h1>
+      <h1 className="text-2xl font-bold text-slate-900">Jonathan Kong</h1>
       <h2 className="text-base font-semibold text-slate-700">{title}</h2>
     </div>
-    <div className="text-sm text-slate-700 text-right">
-      <a
-        data-mailto="1"
-        className="block text-blue-700 underline"
-        href={`mailto:${EMAIL}`}
-      >
-        Email:&nbsp;&nbsp;{EMAIL}
-      </a>
-      <div>
-        Location: <span className="font-semibold">China</span>
+    <div className="flex items-start gap-3">
+      <div className="text-sm text-slate-700 text-right">
+        <a
+          data-mailto="1"
+          className="block text-blue-700 underline"
+          href={`mailto:${EMAIL}`}
+        >
+          Email:&nbsp;&nbsp;{EMAIL}
+        </a>
+        <div className="flex items-center justify-end gap-2">
+          <span>Location: <span className="font-semibold">China</span></span>
+          <span className="text-slate-400">|</span>
+          <span className="text-xs font-semibold text-slate-700">Remote Only (Global)</span>
+        </div>
       </div>
     </div>
   </header>
