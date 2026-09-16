@@ -145,7 +145,7 @@ const node: StackEntry = {
   ],
   skills: (
     <>
-      <p>Education: B.Eng. Computer Science and Technology, Jiangsu University of Science and Technology (2004 - 2008)</p>
+      <p>Education: <strong>B.Sc.</strong> Computer Science, Jiangsu University of Science and Technology (<strong>2004 – 2008</strong>)</p>
       <ul>
         <li className="text-wrap">
           <strong>Runtime:</strong> Node.js 18/20, TypeScript, ESM, CommonJS, npm/pnpm

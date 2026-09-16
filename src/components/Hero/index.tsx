@@ -61,24 +61,25 @@ function DownloadCvDesktop() {
         />
 
         {/* Button */}
-        <motion.button
-          whileHover={{ scale: 1.05, boxShadow: "0 0 24px 4px rgba(20,255,236,0.3), 0 8px 32px rgba(0,0,0,0.5)" }}
-          whileTap={{ scale: 0.96 }}
-          className="relative z-10 cursor-pointer inline-flex items-center gap-3 pl-4 pr-5 py-[11px] rounded-full bg-[#1a1a1a]/80 backdrop-blur-md border border-white/[0.06] shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:border-[#14FFEC]/30 transition-all duration-300 overflow-hidden"
-        >
-          <motion.span
-            animate={{ scale: [1, 1.04, 1] }}
-            transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
-            className="flex items-center justify-center w-8 h-8 rounded-full bg-[#14FFEC]/10 border border-[#14FFEC]/20 flex-shrink-0"
+        <Link to="/cv" target="_blank" className="flex items-center gap-3">
+          <motion.button
+            whileHover={{ scale: 1.05, boxShadow: "0 0 24px 4px rgba(20,255,236,0.3), 0 8px 32px rgba(0,0,0,0.5)" }}
+            whileTap={{ scale: 0.96 }}
+            className="relative z-10 cursor-pointer inline-flex items-center gap-3 pl-4 pr-5 py-[11px] rounded-full bg-[#1a1a1a]/80 backdrop-blur-md border border-white/[0.06] shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:border-[#14FFEC]/30 transition-all duration-300 overflow-hidden"
           >
-            <GrDocumentPdf className="text-[#14FFEC]" size={14} />
-          </motion.span>
-          <Link to="/cv" target="_blank" className="flex items-center gap-3">
+            <motion.span
+              animate={{ scale: [1, 1.04, 1] }}
+              transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+              className="flex items-center justify-center w-8 h-8 rounded-full bg-[#14FFEC]/10 border border-[#14FFEC]/20 flex-shrink-0"
+            >
+              <GrDocumentPdf className="text-[#14FFEC]" size={14} />
+            </motion.span>
+
             <span className="text-[#e8e8e8] font-medium tracking-wide text-sm lg:text-[15px]">
               Download CV
             </span>
-          </Link>
-        </motion.button>
+          </motion.button>
+        </Link>
       </motion.div>
     </motion.div>
   )
@@ -87,25 +88,26 @@ function DownloadCvDesktop() {
 /* ── Mobile / tablet: inline with social media, to the left ─────────────── */
 function DownloadCvMobile() {
   return (
-    <motion.button
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
-      whileHover={{ scale: 1.04, boxShadow: "0 0 16px 3px rgba(20,255,236,0.25), 0 4px 16px rgba(0,0,0,0.4)" }}
-      whileTap={{ scale: 0.96 }}
-      className="relative z-10 cursor-pointer inline-flex items-center gap-2 pl-3 pr-5 py-2.5 rounded-full bg-[#1a1a1a]/80 backdrop-blur-md border border-[#14FFEC]/40 shadow-[0_4px_16px_rgba(0,0,0,0.35)] hover:border-[#14FFEC]/60 hover:shadow-[0_0_16px_3px_rgba(20,255,236,0.25),0_4px_16px_rgba(0,0,0,0.4)] transition-all duration-300 overflow-hidden"
-    >
-      {/* Icon */}
-      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#14FFEC]/10 border border-[#14FFEC]/20 flex-shrink-0">
-        <GrDocumentPdf className="text-[#14FFEC]" size={13} />
-      </span>
-      <Link to="/cv" target="_blank" className="flex items-center gap-2">
+    <Link to="/cv" target="_blank" className="flex items-center gap-2">
+      <motion.button
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.8, ease: "easeOut" }}
+        whileHover={{ scale: 1.04, boxShadow: "0 0 16px 3px rgba(20,255,236,0.25), 0 4px 16px rgba(0,0,0,0.4)" }}
+        whileTap={{ scale: 0.96 }}
+        className="relative z-10 cursor-pointer inline-flex items-center gap-2 pl-3 pr-5 py-2.5 rounded-full bg-[#1a1a1a]/80 backdrop-blur-md border border-[#14FFEC]/40 shadow-[0_4px_16px_rgba(0,0,0,0.35)] hover:border-[#14FFEC]/60 hover:shadow-[0_0_16px_3px_rgba(20,255,236,0.25),0_4px_16px_rgba(0,0,0,0.4)] transition-all duration-300 overflow-hidden"
+      >
+        {/* Icon */}
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#14FFEC]/10 border border-[#14FFEC]/20 flex-shrink-0">
+          <GrDocumentPdf className="text-[#14FFEC]" size={13} />
+        </span>
+
         <span className="text-[#e8e8e8] font-medium text-sm tracking-wide">
           Download CV
         </span>
-      </Link>
-    </motion.button>
+      </motion.button>
+    </Link>
   )
 }
 

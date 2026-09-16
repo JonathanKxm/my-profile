@@ -6,13 +6,13 @@ export default function SocialMedia() {
     <div className="flex gap-6 text-4xl lg:text-6xl text-jonathan-light z-20">
       <motion.a
         whileHover={{ scale: 1.2, color: "gray" }}
-        href="https://github.com/JonathanTube"
+        href="https://github.com/JonathanKxm"
       >
         <SiGithub />
       </motion.a>
       <motion.a
         whileHover={{ scale: 1.2, color: "#0375b4" }}
-        href="https://www.linkedin.com/in/jonathan-k-692324285/"
+        href="https://www.linkedin.com/in/jonathan-kong-512792434/"
       >
         <FaLinkedin />
       </motion.a>

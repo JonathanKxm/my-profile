@@ -65,10 +65,13 @@ export const PageHeader = ({
         >
           Email:&nbsp;&nbsp;{EMAIL}
         </a>
-        <div className="flex items-center justify-end gap-2">
-          <span>Location: <span className="font-semibold">China</span></span>
-          <span className="text-slate-400">|</span>
-          <span className="text-xs font-semibold text-slate-700">Remote Only (Global)</span>
+        <div className="flex flex-col items-end gap-0.5">
+          <span>
+            Based in <span className="font-semibold">China</span> | Remote
+          </span>
+          <span className="text-xs font-semibold text-slate-700">
+            Open to International B2B / Contractor Engagements
+          </span>
         </div>
       </div>
     </div>

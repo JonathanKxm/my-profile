@@ -6,7 +6,7 @@ const experiences = [
     period: "2023 ~ Present",
     description: [
       "Focus on developing web applications using React and Node.js ecosystem.",
-      "Developed an elevator maintenance appointment system using React, Next.js, Tailwind CSS, and Ant Design.",
+      "Developed an elevator maintenance appointment system using React, Tailwind CSS, and Ant Design.",
       "Built a photovoltaic power monitoring system with Vue and ElementUI.",
       "Created a smart cabinet system with Vue3, Ant Design, and Java, ensuring secure material storage in campus labs.",
       "Developed a Windows ship performance monitoring client using Python and PyQt5, featuring real-time propulsion data visualization, fuel consumption tracking, trim optimization analysis, and CO2 emission reporting with trend analysis dashboards.",
