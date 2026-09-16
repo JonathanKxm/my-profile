@@ -108,7 +108,9 @@ export default function CvResume() {
           windowHeight: pageHeightCss,
         })
 
-        const imgData = canvas.toDataURL("image/png")
+        // JPEG quality 0.92 keeps text sharp while staying under 2 MB
+        // at A4 with scale 2.
+        const imgData = canvas.toDataURL("image/jpeg", 0.92)
         const ratio = pageWidthPt / PAGE_W
         const imgHeightPt = pageHeightCss * ratio
 
@@ -130,7 +132,7 @@ export default function CvResume() {
           }
         }
 
-        pdf.addImage(imgData, "PNG", 0, 0, pageWidthPt, imgHeightPt)
+        pdf.addImage(imgData, "JPEG", 0, 0, pageWidthPt, imgHeightPt)
       }
 
       pdf.save(entry.fileName)
