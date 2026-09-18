@@ -5,7 +5,7 @@ const fullstack: StackEntry = {
   label: "Senior Full-Stack Engineer",
   title: "Senior Full-Stack Engineer",
   summary: (
-    <p>
+    <p className="!text-sm">
       Senior Full-Stack Engineer with <strong>10+ years</strong> of experience
       building backend services, web applications, automation systems, and
       real-time desktop software.       Strong background in <strong>Java/Spring</strong>,{" "}
