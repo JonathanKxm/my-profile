@@ -98,7 +98,7 @@ export default function CvResume() {
         const pageHeightCss = Math.min(page.clientHeight, PAGE_H)
 
         const canvas = await html2canvas(page, {
-          scale: 2,
+          scale: 3,
           backgroundColor: "#ffffff",
           useCORS: true,
           logging: false,
@@ -108,9 +108,8 @@ export default function CvResume() {
           windowHeight: pageHeightCss,
         })
 
-        // JPEG quality 0.92 keeps text sharp while staying under 2 MB
-        // at A4 with scale 2.
-        const imgData = canvas.toDataURL("image/jpeg", 0.92)
+        // PNG format ensures lossless text rendering for maximum clarity
+        const imgData = canvas.toDataURL("image/png")
         const ratio = pageWidthPt / PAGE_W
         const imgHeightPt = pageHeightCss * ratio
 
@@ -132,7 +131,7 @@ export default function CvResume() {
           }
         }
 
-        pdf.addImage(imgData, "JPEG", 0, 0, pageWidthPt, imgHeightPt)
+        pdf.addImage(imgData, "PNG", 0, 0, pageWidthPt, imgHeightPt)
       }
 
       pdf.save(entry.fileName)
